@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>HONEST CYLINDER TESTING</title>
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <!-- 
+    3D link model sporter
+ -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer"></script>
+
+    <!-- 
+    - favicon
+  -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 
+    - custom css 
+  -->
+    <style>
+        @keyframes message {
+            0% {
+                left: 0px;
+                top: 50px;
+            }
+            100% {
+                top: 50px;
+                left: 200px;
+            }
+        }
+    </style>
+
+    <!-- Include jQuery from CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">HONEST CNG RETESTING</p>
+    </div>
+    <!-- 
+    - #INQUIRY FORM
+  -->
+    <div style="display: none;
+     position: absolute;
+     height: 50px;
+     background-color: lime;
+     width: 400px;
+     padding: 10px;
+     border-radius: 20px;
+     animation-name: message;
+     animation-duration: 2s;" id='inquiry_success'>
+        <strong>Success Full!</strong>
+    </div>
+    <div class="inquiry" id='inquiry'>
+        <section class="inquiry_form">
+
+            <div class="container" style="width: auto;">
+
+                <div class="form reservation-form bg-black-10">
+                    <!--
+                   
+                    -->
+
+                    <form action="" method="" class="form-left">
+                        <div class="inquiry-close" onclick="inquiry_close()">
+                            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                        </div>
+
+                        <h2 class="headline-1 text-center" style="color: red;">Inquiry</h2>
+                        <p class="form-text text-center" style="color:white;">
+                            અમારા વિશે કોઈપણ પ્રશ્નો પૂછો. અમે ટૂંક સમયમાં તમારી સાથે વાતચીત કરીશું
+                        </p>
+
+                        <div class="input-wrapper">
+                            <p id='in_name_error' style="color: red;"></p>
+                            <input type="text" name="in_name" placeholder="Your Name" autocomplete="off" class="input-field" id="in_name" require>
+                            <p id='in_phone_error' style="color: red;"></p>
+                            <input type="tel" name="in_phone" placeholder="Phone Number" autocomplete="off" class="input-field" id='in_phone' require>
+                        </div>
+                        <textarea name="in_message" placeholder="Message" autocomplete="off" class="input-field" id='in_message' require></textarea>
+
+                        <button type="button" class="btn" id="submit_Button_Inquiry">
+                            <span class="text text-1">
+                                SUBMIT
+                            </span>
+                            <span class="text text-2">SUBMIT</span>
+                </div>
+
+                </form>
+            </div>
+
+    </div>
+    </section>
+    </div>
+
+    <!-- 
+    - #TOP BAR
+  -->
+    <div class="topbar">
+        <div class="container">
+
+            <address class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">
+                    B/H JEEP SHOW ROM, nr. SREERAM AUTO MOVE SANATHAL, Ahmedabad, Gujarat 382210
+                </span>
+            </address>
+
+            <div class="separator"></div>
+
+            <div class="topbar-item item-2">
+                <div class="icon">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">Daily : 8.00 am to 8.00 pm</span>
+            </div>
+
+            <a href="tel:+11234567890" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">+91 7878996996</span>
+            </a>
+
+            <div class="separator"></div>
+
+            <a href="mailto:booking@restaurant.com" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">honestcng@gmail.com</span>
+            </a>
+
+        </div>
+    </div>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <h1 width="160" height="50">HONEST CNG<sup style="color: red;"> &nbsp;RETESTING</sup></h1>
+            </a>
+
+            <nav class="navbar " data-navbar>
+
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                        <a href="#" class="logo">
+                            <h1 width="160" height="50">HONEST CNG<sup style="color: red;"> &nbsp;RETESTING</sup></h1>
+                        </a>
+
+                        <ul class="navbar-list">
+
+                            <li class="navbar-item">
+                                <a href="#home" class="navbar-link hover-underline active">
+                                    <div class="separator"></div>
+
+                                    <span class="span">Home</span>
+                                </a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#about" class="navbar-link hover-underline">
+                                    <div class="separator"></div>
+
+                                    <span class="span">About Us</span>
+                                </a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#RESERVATION" class="navbar-link hover-underline">
+                                    <div class="separator"></div>
+
+                                    <span class="span">Reservation</span>
+                                </a>
+                            </li>
+
+
+
+
+
+                            <li class="navbar-item">
+                                <a href="#google-map" class="navbar-link hover-underline">
+                                    <div class="separator"></div>
+                                    <span class="span">Map</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <div class="text-center">
+                            <p class="headline-1 navbar-title">Visit Us</p>
+
+                            <address class="body-4">
+                        B/H JEEP SHOW ROM, nr. SREERAM AUTO MOVE SANATHAL,<br> Ahmedabad, Gujarat 382210
+                    </address>
+
+                            <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
+
+                            <a href="mailto:amanshha@gamil.com" class="body-4 sidebar-link">amanshha@gamil.com</a>
+
+                            <div class="separator"></div>
+
+                            <p class="contact-label">Appointment Request</p>
+
+                            <a href="tel:+7878996996" class="body-1 contact-number hover-underline">
+                        +91-78789-96996
+                    </a>
+                        </div>
+
+                        </nav>
+
+
+
+                        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+                        <div class="overlay" data-nav-toggler data-overlay></div>
+
+                </div>
+
+                </header>
+
+
+                <main>
+                    <article>
+                        <!--  
+        - #HERO
+      -->
+
+                        <section class="hero text-center" aria-label="home" id="home">
+
+                            <ul class="hero-slider" data-hero-slider>
+
+                                <li class="slider-item active" data-hero-slider-item>
+
+                                    <div class="slider-bg">
+                                        <img src="img/1.jpg" width="1880" height="950" alt="" class="img-cover">
+                                    </div>
+
+
+                                    <p class="label-2 section-subtitle slider-reveal">સિલિન્ડર પરીક્ષણ </p>
+
+                                    <h1 class="display-1 hero-title slider-reveal" lang="gu">
+                                        Safety Tested, Road Ready!.
+                                    </h1>
+
+                                    <p class="body-2 hero-text slider-reveal">
+                                        સુરક્ષા પરીક્ષિત, સડક પ્રસ્તુત! આપણી સુરક્ષા, આમારી જિમ્મેવારી.
+                                    </p>
+
+                                    <a href="#google-map" class="btn btn-primary slider-reveal">
+                                        <span class="text text-1">View Our Location</span>
+
+                                        <span class="text text-2" aria-hidden="true">View Our Location</span>
+                                    </a>
+
+                                </li>
+
+                                <li class="slider-item" data-hero-slider-item>
+
+                                    <div class="slider-bg">
+                                        <img src="img/home_1 (2).jpg" width="1880" height="950" alt="" class="img-cover">
+                                    </div>
+
+                                    <p class="label-2 section-subtitle slider-reveal">our respect</p>
+
+                                    <h1 class="display-1 hero-title slider-reveal">
+                                        આપણી સુરક્ષા, આમારું આદર.
+                                    </h1>
+
+                                    <p class="body-2 hero-text slider-reveal">
+                                        અમારું મિશન: સુરક્ષા અને માનવતાને અગ્રિમ રાખવું, વિશ્વાસની સેવા સાથે. એકમુખ પ્રયાસ, સમગ્ર સુરક્ષાનું પ્રતીક.
+                                    </p>
+
+                                    <a href="#google-map" class="btn btn-primary slider-reveal">
+                                        <span class="text text-1">View Our Location</span>
+
+                                        <span class="text text-2" aria-hidden="true">View Our Location</span>
+                                    </a>
+
+                                </li>
+
+                                <li class="slider-item" data-hero-slider-item>
+
+                                    <div class="slider-bg">
+                                        <img src="img/2.jpg" width="1880" height="950" alt="" class="img-cover">
+                                    </div>
+
+                                    <p class="label-2 section-subtitle slider-reveal">Our Commitment</p>
+
+                                    <h1 class="display-1 hero-title slider-reveal">
+                                        સુરક્ષાની જમણત, આનંદભરી યાત્રા!
+                                    </h1>
+
+                                    <p class="body-2 hero-text slider-reveal">
+                                        આપણી સુરક્ષાની જમણત સાથે, સડક પર આનંદની યાત્રા નિશ્ચિત છે!
+                                    </p>
+
+                                    <a href="#google-map" class="btn btn-primary slider-reveal">
+                                        <span class="text text-1">View Our Location</span>
+
+                                        <span class="text text-2" aria-hidden="true">View Our Location</span>
+                                    </a>
+
+                                </li>
+
+                            </ul>
+
+                            <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                    <ion-icon name="chevron-back"></ion-icon>
+                </button>
+
+                            <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </button>
+
+                            <a href="#" class="hero-btn has-after" onclick="call()">
+                                <!-- <img src="" width="48" height="48" alt="booking icon"> -->
+
+                                <i class='bx bx-phone-call '></i>
+                                <span class="label-2 text-center span">Book A Table</span>
+                            </a>
+
+                        </section>
+
+                        <!-- 
+        - #ABOUT
+      -->
+                        <section class="section about text-center" aria-labelledby="about-label" id="about">
+                            <div class="container">
+
+                                <div class="about-content">
+
+                                    <p class="label-2 section-subtitle" id="about-label">About As</p>
+
+                                    <h2 class="headline-1 section-title">Safety and Efficiency</h2>
+
+                                    <p class="section-text">
+                                        તમારા CNG વાહનોની સુરક્ષા અને કામગીરી જાળવવામાં તમારા વિશ્વસનીય ભાગીદાર, પ્રમાણિક CNG રિટેસ્ટિંગ પ્લાન્ટમાં આપનું સ્વાગત છે. શેષનના હાર્દમાં સ્થિત, અમે ઉચ્ચતમ CNG સિલિન્ડર પરીક્ષણ સેવાઓ પ્રદાન કરવા માટે પ્રતિબદ્ધ છીએ જે ગુણવત્તા અને સલામતીના ઉચ્ચતમ ધોરણોનું
+                                        પાલન કરે છે.
+                                    </p>
+
+                                    <div class="contact-label">Inquiry Through Call</div>
+
+                                    <a href="tel:+917878996996" class="body-1 contact-number hover-underline">+91-78789-96996</a>
+
+
+                                </div>
+
+                                <figure class="about-banner">
+
+                                    <model-viewer src="img/cylinder.glb" alt="3D model" auto-rotate class="w-100" style="width: 100%; 
+      height: 500px;" data-parallax-item data-parallax-speed="1"></model-viewer>
+
+
+                                    <div class="abs-img abs-img-2 has-before">
+                                    </div>
+
+                                </figure>
+
+                            </div>
+                        </section>
+
+                        <!-- 
+        - #SERVICE
+      -->
+                        <section class="section service bg-black-10 text-center" aria-label="service">
+                            <div class="container">
+
+                                <p class="section-subtitle label-2">Flavors For Royalty</p>
+
+                                <h2 class="headline-1 section-title">Welcome to Honest CNG Re-testing</h2>
+
+                                <p class="section-text">
+                                    પ્રમાણિક CNG રિ-ટેસ્ટિંગ એ એક પ્રમાણિત CNG રિ-ટેસ્ટિંગ પ્લાન્ટ છે જે CNG સિલિન્ડરોની સલામતી અને પાલનની ખાતરી કરવા માટે પ્રતિબદ્ધ છે. અમારી પુનઃ-પરીક્ષણ સુવિધા માટે સરકારી પ્રમાણપત્ર ધરાવવાનો અમને ગર્વ છે, જે અમારા ગ્રાહકોને અમારી કુશળતા અને ઉદ્યોગના ધોરણોનું
+                                    પાલન કરવાની ખાતરી આપે છે.</p>
+
+                                <ul class="grid-list">
+
+                                    <li>
+                                        <div class="service-card">
+
+                                            <a href="img/certificat.jpg" target="_blank" class="has-before hover:shine">
+                                                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                                                    <img src="img/certificat.jpg" width="320" height="336" loading="lazy" alt="Breakfast" class="img-cover">
+                                                </figure>
+                                            </a>
+
+                                            <div class="card-content">
+
+                                                <h3 class="title-4 card-title">
+                                                    <a href="img/certificat.jpg" target="_blank">Certificat</a>
+                                                </h3>
+
+                                                <!-- <a href="#" class="btn-text hover-underline label-2">View Menu</a> -->
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="service-card">
+
+                                            <a href="img/advertisement.jpg" target="_blank" class="has-before hover:shine">
+                                                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                                                    <img src="img/advertisement.jpg" width="385" height="336" loading="lazy" alt="Appetizers" class="img-cover">
+                                                </figure>
+                                            </a>
+
+                                            <div class="card-content">
+
+                                                <h3 class="title-4 card-title">
+                                                    <a href="img/advertisement.jpg" target="_blank">Bord</a>
+                                                </h3>
+
+                                                <!-- <a href="#" class="btn-text hover-underline label-2">View Menu</a> -->
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="service-card">
+
+                                            <a href="img/Approval.jpg" target="_blank" class="has-before hover:shine">
+                                                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                                                    <img src="img/Approval.jpg" width="285" height="336" loading="lazy" alt="Drinks" class="img-cover">
+                                                </figure>
+                                            </a>
+
+                                            <div class="card-content">
+
+                                                <h3 class="title-4 card-title">
+                                                    <a href="img/Approval.jpg" target="_blank">Approval</a>
+                                                </h3>
+
+                                                <!-- <a href="#" class="btn-text hover-underline label-2">View Menu</a> -->
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <img src="img/ball.png" width="246" height="412" loading="lazy" alt="shape" class="shape shape-1 move-anim">
+                                <img src="img/ball.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-2 move-anim">
+
+                            </div>
+                        </section>
+
+
+
+                        <section class="section testi text-center has-bg-image" style="background-image: url('./assets/images/testimonial-bg.jpg ')" aria-label="testimonials">
+                            <div class="container">
+
+                                <div class="quote"></div>
+
+                                <p class="headline-2 testi-text">
+                                </p>
+
+                                <div class="wrapper">
+                                    <div class="separator"></div>
+                                    <div class="separator"></div>
+                                    <div class="separator"></div>
+                                </div>
+
+
+
+                            </div>
+                        </section>
+
+                        <!--
+             #RESERVATION 
+      -->
+
+                        <section class="reservation" id='RESERVATION'>
+                            <div class="container">
+
+                                <div class="form reservation-form bg-black-10">
+
+                                    <form class="form-left">
+
+                                        <h2 class="headline-1 text-center">Online Reservation</h2>
+
+                                        <p class="form-text text-center">
+                                            Booking request <a href="tel:+917878996996" class="link">+91-932-7158845</a> or fill out a form
+                                        </p>
+
+                                        <div class="input-wrapper " id='input_destop'>
+
+                                            <input type="text" name="appitment_name" id='appitment_name' placeholder="Your Name" autocomplete="off" class="input-field">
+                                            <sup id="nameError" class="error nameError"></sup>
+
+                                            <input type="tel" name="appitment_phone" id='appitment_phone' placeholder="Phone Number" autocomplete="off" class="input-field">
+                                            <sup id="phoneError" class="error phoneError"></sup>
+                                        </div>
+                                        <div class="input-wrapper" id='input_phone'>
+
+                                            <sup id="nameError" class="error nameError"></sup>
+
+                                            <input type="text" name="appitment_name" id='appitment_name' placeholder="Your Name" autocomplete="off" class="input-field">
+
+                                            <sup id="phoneError" class="error phoneError"></sup>
+                                            <input type="tel" name="appitment_phone" id='appitment_phone' placeholder="Phone Number" autocomplete="off" class="input-field">
+
+                                        </div>
+
+
+                                        <div class="input-wrapper">
+
+                                            <div class="icon-wrapper">
+                                                <p>Choose Your Vahicule</p>
+
+                                                <ion-icon name="car-outline" style="height: 20px; width:20px;margin-top:14px;margin-left: 5px;" aria-hidden="true"></ion-icon>
+
+                                                <select name="person" id="person" class="input-field">
+                                        <option value="Auto">Auto rickshaw</option>
+                                        <option value="Car">Car</option>
+                                        <option value="Buse">Buse</option>
+                                    </select>
+
+                                                <ion-icon name="chevron-down" aria-hidden="true" style="height: 20px;width:20px;margin-top:12px;"></ion-icon>
+                                            </div>
+
+                                            <div class="icon-wrapper">
+                                                <p>Choose Appointment Date</p>
+                                                <input type="date" name="reservation-date" value='<?php echo date("Y-m-d"); ?>' id='reservation-date' placeholder="choose date" class="input-field" min='<?php echo date("Y-m-d"); ?>'>
+
+                                            </div>
+
+                                            <div class="icon-wrapper">
+                                                <p>Choose Appointment time</p>
+
+                                                <ion-icon name="time-outline" style="height: 20px; width:20px;margin-top:14px;margin-left: 5px;" aria-hidden="true"></ion-icon>
+
+                                                <select name="time" id='time' class="input-field" placeholder="Enter Time">
+                                        <option value="08:00am">08 : 00 am</option>
+                                        <option value="09:00am">09 : 00 am</option>
+                                        <option value="10:00am">10 : 00 am</option>
+                                        <option value="11:00am">11 : 00 am</option>
+                                        <option value="12:00am">12 : 00 am</option>
+                                        <option value="01:00pm">01 : 00 pm</option>
+                                        <option value="02:00pm">02 : 00 pm</option>
+                                        <option value="03:00pm">03 : 00 pm</option>
+                                        <option value="04:00pm">04 : 00 pm</option>
+                                        <option value="05:00pm">05 : 00 pm</option>
+                                        <option value="06:00pm">06 : 00 pm</option>
+                                        <option value="07:00pm">07 : 00 pm</option>
+                                        <option value="08:00pm">08 : 00 pm</option>
+
+                                    </select>
+
+
+
+                                                <p id="timeError" class="error"></p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="input-wrapper" id='destop_input_VN'>
+                                            <input type="text" name="vahicule_number" id='vahicule_number' placeholder="Enter Your Vahicule Number" autocomplete="off" class="input-field">
+                                            <div id="vehicleNumberError" class="error"></div>
+                                        </div>
+                                        <div class="input-wrapper" id='phone_input_VN'>
+                                            <div id="vehicleNumberError" class="error"></div>
+
+                                            <input type="text" name="vahicule_number" id='vahicule_number' placeholder="Enter Your Vahicule Number" autocomplete="off" class="input-field">
+                                        </div>
+
+
+                                        <button type="button" class="btn btn-secondary" id="submitButton">
+                                <span class="text text-1">Book Appointment</span>
+
+                                <span class="text text-2" aria-hidden="true">Book Appointment</span>
+                            </button>
+
+                                    </form>
+
+
+
+                                    <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+                                        <h2 class="headline-1 text-center">Contact Us</h2>
+
+                                        <p class="contact-label">Booking Request</p>
+
+                                        <a href="tel:+917878996996" class="body-1 contact-number hover-underline">+91-787-8996996</a>
+
+                                        <div class="separator"></div>
+
+                                        <p class="contact-label">Location</p>
+
+                                        <address class="body-4">
+                                B/H JEEP SHOW ROM, nr. SREERAM AUTO MOVE SANATHAL, Ahmedabad, Gujarat 382210
+                            </address>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </section>
+                        <!-- 
+        - #FEATURES
+      -->
+
+
+
+
+                        <!-- 
+        - #EVENT
+      -->
+
+
+
+                    </article>
+                </main>
+                <div style="height:50px">
+
+                </div>
+                <!-- MAP -->
+                <div class="location" id='google-map'>
+                    <center>
+                        <iframe id="destop_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.807364838869!2d72.4773276!3d22.957320499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e91f5fd31d00b%3A0xa8dad6ececba1f21!2sHONEST%20CNG%20RETESTING%20PLANT!5e0!3m2!1sen!2sin!4v1711437463739!5m2!1sen!2sin"
+                            height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </center>
+                </div>
+                <!-- - 
+    #FOOTER 
+-->
+
+
+                <footer class="footer section has-bg-image text-center">
+                    <div class="container">
+
+                        <div class="footer-top grid-list">
+
+                            <div class="footer-brand has-before has-after">
+
+                                <a href="#" class="logo">
+                                    <!-- <img src="img/home_1 (2).jpg" width="160" height="50" loading="lazy" alt="grilli home"> -->
+                                </a>
+
+                                <address class="body-4">
+                        B/H JEEP SHOW ROM, nr. SREERAM AUTO MOVE SANATHAL, Ahmedabad, Gujarat 382210
+                    </address>
+
+                                <a href="mailto:honestcng@gmail.com" class="body-4 contact-link">honestcng@gmail.com</a>
+
+                                <a href="tel:+917878996996" class="body-4 contact-link">Booking Request : +91-78789-96996</a>
+
+                                <p class="body-4">
+                                    Open : 09:00 am - 01:00 pm
+                                </p>
+
+                                <div class="wrapper">
+                                    <div class="separator"></div>
+                                    <div class="separator"></div>
+                                    <div class="separator"></div>
+                                </div>
+
+
+                            </div>
+
+                            <ul class="footer-list">
+
+                                <li>
+                                    <a href="#" class="label-2 footer-link hover-underline">Home</a>
+                                </li>
+
+
+
+                                <li>
+                                    <a href="#RESERVATION" class="label-2 footer-link hover-underline">Contact</a>
+                                </li>
+
+                                <li>
+                                    <a href="#gallery" class="label-2 footer-link hover-underline">Gallery</a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="footer-list">
+
+
+
+                                <li>
+                                    <a href="https://www.instagram.com/az__007__boy/" class="label-2 footer-link hover-underline">Instagram</a>
+                                </li>
+
+
+
+                                <li>
+                                    <a href="#'google-map'" class="label-2 footer-link hover-underline">Google Map</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="footer-bottom">
+
+                            <p class="copyright">
+                                &copy; 2024. All Rights Reserved | Crafted by Amanshah</a>
+                            </p>
+
+                        </div>
+
+                    </div>
+                </footer>
+
+
+
+
+
+                <!-- 
+    - #BACK TO TOP
+  -->
+
+                <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+                    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+                </a>
+
+
+
+                <!-- 
+    - custom js 
+  -->
+                <script>
+                    // Check if the URL contains a success parameter
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const success = urlParams.get('success');
+
+                    // If success parameter is present, show popup message
+                    if (success) {
+                        document.getElementById('inquiry_success').style.display = 'block';
+                        setTimeout(function() {
+
+                            document.getElementById('inquiry_success').style.display = 'none';
+                        }, 2000);
+                    }
+                </script>
+
+                <!-- 
+    - custom js link
+  -->
+                <script src="script.js"></script>
+                <!-- <script src="form_script.js"></script> -->
+                <!-- Include EmailJS SDK -->
+                <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+                </script>
+                <!-- Custom JavaScript for Form Validation and Submission -->
+                <script type="text/javascript">
+                    (function() {
+                        emailjs.init("1Rz49vIKJqE_-ermZ"); // Replace with your EmailJS User ID
+                    })();
+                </script>
+                <script src="form_script.js"></script>
+                <script src="inquiry_from.js"></script>
+
+
+
+
+
+
+                <!-- 
+    - ionicon link
+  -->
+                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
