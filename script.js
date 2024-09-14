@@ -31,11 +31,16 @@ const overlay = document.querySelector("[data-overlay]");
 const toggleNavbar = function() {
     navbar.classList.toggle("active");
     overlay.classList.toggle("active");
-    document.body.classList.toggle("nav-active");
+    // document.body.classList.toggle("nav-active");
 }
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
+function cloas_nav() {
+    navbar.classList.remove('active');
+    overlay.classList.remove('active');
+
+}
 
 
 // /**
@@ -163,7 +168,7 @@ window.addEventListener("mousemove", function(event) {
 // phone call
 function call() {
     // window.open('whatsapp://send?text=This is WhatsApp sharing example using button')
-    window.location.href = "tel:" + "+919327158845";
+    window.location.href = "tel:" + "+917878996996";
 }
 
 
